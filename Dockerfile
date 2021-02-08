@@ -21,4 +21,5 @@ RUN yes | unminimize \
 ENV LANG=en_US.UTF-8
 
 COPY /production /var/www/html
-EXPOSE 80
+
+

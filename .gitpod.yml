@@ -1,13 +1,16 @@
+
 ports:
   - port: 8080
     onOpen: open-preview
   - port: 9000-9999
     onOpen: ignore
-    
 image:
   file: .gitpod.Dockerfile
 
 tasks:
   - init: go get && go build ./... && go test ./... && make
     command: go run
+ports:
+  - port: 8080
+    onOpen: open-preview    
 
