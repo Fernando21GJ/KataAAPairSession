@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+ports:
+  - port: 3000-8999
+
+tasks:
+  - init: go get && go build ./... && go test ./... && make
+    command: go run
