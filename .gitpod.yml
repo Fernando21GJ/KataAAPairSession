@@ -1,9 +1,10 @@
+ports:
+    - port: 8080
+    
 image:
   file: .gitpod.Dockerfile
-ports:
-  - port: 8080
-    onOpen: notify
-  
+
 tasks:
   - init: go get && go build ./... && go test ./... && make
     command: go run
+

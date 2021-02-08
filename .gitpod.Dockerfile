@@ -1,4 +1,5 @@
 FROM php:7.4-apache
 
 COPY /production /var/www/html
-EXPOSE 8080
+
+EXPOSE 80
